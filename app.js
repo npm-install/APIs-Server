@@ -5,10 +5,6 @@ const volleyball = require('volleyball');
 
 const bodyParser = require('body-parser');
 
-const { newsKey, sumKey } = require('./keys');
-
-console.log(newsKey, sumKey);
-
 const jsonParser = bodyParser.json();
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 

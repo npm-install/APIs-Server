@@ -22,12 +22,9 @@ router.post("/summary/", function(req, res, next) {
           })
           return updatedArticle
         });
-        // console.log(Promise.resolve(promArr[0]))
-        // console.log(articles)
         return Promise.all(articles);
     })
     .then(data => {
-      // console.log('data', data)
       res.json(data);
     })
     .catch(console.error);
